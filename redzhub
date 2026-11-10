@@ -6,12 +6,6 @@ local HttpService = game:GetService("HttpService")
 
 local Plr = Players.LocalPlayer
 
-if Settings.Translator == true then
-    pcall(function()
-        _G.RedzTranslator = HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/newredz/refs/heads/main/NewTranslator/NewBloxFruits/NewPortuguese.json"))
-    end)
-end
-
 local function JoinTeam()
     local targetTeam = "Marines"
     if Settings.JoinTeam == "Pirates" then
